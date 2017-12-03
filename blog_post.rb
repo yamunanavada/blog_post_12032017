@@ -18,12 +18,11 @@ class Orc
     available_orcs = Orc.all.select do |orc|
       orc.status == "available"
     end
-
     available_orcs.select do |orc|
       orc.type == "Uruk-hai"
     end
   end
-
+  
 end
 
 Orc.new("Gob", "available", "Uruk-hai")
