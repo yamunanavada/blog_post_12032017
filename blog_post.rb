@@ -1,4 +1,3 @@
-require "pry"
 class Orc
 
   attr_accessor :name, :status, :type
@@ -32,6 +31,7 @@ Orc.new("George", "busy", "Uruk-hai")
 Orc.new("Fred", "busy", "Other Orc")
 Orc.new("Tobias", "available", "Other Orc")
 
-binding.pry
-
-Orc.all
+Orc.all # => [#<Orc:0x007f9f4b2b2450 @name="Gob", @status="available", @type="Uruk-hai">,
+ #<Orc:0x007f9f4b2b23b0 @name="George", @status="busy", @type="Uruk-hai">,
+ #<Orc:0x007f9f4b2b2310 @name="Fred", @status="busy", @type="Other Orc">,
+ #<Orc:0x007f9f4b2b2270 @name="Tobias", @status="available", @type="Other Orc">]
